@@ -89,6 +89,7 @@ public class UserBean implements Serializable {
         pointStatisticsMBean.updatePoints(requests);
         pointStatisticsMBean.getTotalPoints();
         pointStatisticsMBean.getPointsInArea();
+        pointStatisticsMBean.checkOutOfBounds(point);
         DatabaseHandler.getDatabaseManager().addPoint(point);
         this.requests.add(0, point);
     }
